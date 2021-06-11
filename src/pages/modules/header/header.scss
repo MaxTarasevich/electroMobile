@@ -1,0 +1,133 @@
+.header{
+    .container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   .nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid $border-color;
+   margin-bottom: 2.6%;
+   }
+    .menu, .header__icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        width: 66%;
+        @include text-style-menu;
+        .menu-item{
+            transition: 0.3s ease-in;
+        }
+        .menu-item:hover{
+            color:$hover-text-color;
+        }
+    }
+    .header__icons{
+        width: 10%;
+        a{
+            transition: 0.4s ease-in;
+        }
+        a:hover{
+            transform:scale(1.25);
+        }
+    }
+    .header__logo{
+        width: 25%;
+    }
+    .header__search{
+        width: 31.5%; 
+        position: relative;
+        input{
+          width: 100%;
+          padding: 18px  0 14px 19px;
+          border:1px solid $border-color;
+          border-radius: 10px;
+          @include text-style-menu;
+        }
+        button{
+            position: absolute;
+            right: 15px;
+            top: 25%;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition:transform 0.3s ease-in;
+        }
+        button:hover{
+            transform: scale(1.2);
+        }
+    }
+    .header__info{
+        width: 26%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .header__info-tel{
+            @include text-bold;
+            padding: 5px 5px 5px 25px;
+            position: relative;
+        }
+        .header__info-tel::before{
+            content:'';
+            display: inline-block;
+            position: absolute;
+            top:25%;
+            left:0;
+            background-image: url(../img/phone-icon.svg);
+            width: 20px;
+            height: 20px;
+            margin: 0 10px 0 0;
+        }
+        .header__info-mail{
+            @include text-style-menu;
+            color:$black;
+            padding: 5px 5px 5px 25px;
+            position: relative;
+        }
+        .header__info-mail::before{
+            content:'';
+            display: inline-block;
+            position: absolute;
+            top:25%;
+            left:0;
+            background-image: url(../img/email-icon.svg);
+            width: 20px;
+            height: 16px;
+            margin: 0 10px 0 0;
+        }
+        .header__info-text{
+            @include text-style-menu;
+        }
+    }
+    .header__logIcon{
+        width: 12%;
+        border-left: 1px solid $border-color;
+        a{
+            margin-left: 20%;
+        }
+    }
+    .header__catalog{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.6%;
+        padding: 2.6% 3.5% 2%;
+        border:1px solid $border-color;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        @include text-bold;
+        li{
+            transition:  color 0.4s ease-in;
+        }
+        li:hover{
+            color:$hover-text-color; 
+        }
+    }
+}
+}

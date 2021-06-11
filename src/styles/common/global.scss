@@ -1,0 +1,32 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+html {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header,section,footer{
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+}
