@@ -4,22 +4,11 @@ const sass = require('gulp-sass')
 const cleanCSS = require('gulp-clean-css')
 const shorthand = require('gulp-shorthand')
 const autoprefixer = require('gulp-autoprefixer')
-const gulpStylelint = require('gulp-stylelint')
 const rename = require("gulp-rename")
 
 module.exports = function styles() {
-  return gulp.src('src/styles/*.scss')
+  return gulp.src('src/styles/style.scss')
     .pipe(plumber())
-    .pipe(gulpStylelint({
-      failAfterError: false,
-      reporters: [
-        {
-          formatter: 'string',
-          console: true
-        }
-      ]
-    }))
-    
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false
