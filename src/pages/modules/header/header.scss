@@ -13,6 +13,7 @@
                 justify-content: space-between;
                 li{
                     margin-left: 15px;
+                    @include Buttons-text;
                 }
                 .contacts-list-item{
                    span{
@@ -46,12 +47,12 @@
     .nav{
         background-color: $nav-bg;
         padding: 15px 0;
+        @include Nav-text;
         .container{
             .nav-menu{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                color: $text;
                 li{
                     transition: color 0.4s ease-in;
                 }

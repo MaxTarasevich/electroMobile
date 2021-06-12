@@ -1,1 +1,63 @@
 /*File for fonts*/
+@font-face {
+    font-family:'Museo Sans Cyrl 300';
+    src: local('MuseoSansCyrl-300'),
+      url(../fonts/MuseoSansCyrl-300.woff) format("woff"),
+      url(../fonts/MuseoSansCyrl-300.woff2) format("woff2");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 300;
+  }
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: local('MuseoSansCyrl-700'),
+      url(../fonts/MuseoSansCyrl-700.woff) format("woff"),
+      url(../fonts/MuseoSansCyrl-700.woff2) format("woff2");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 700;
+  }
+ 
+  @mixin Buttons-text {
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 15px;
+    text-align: center;
+    color:$text-2;
+  }
+
+  @mixin Nav-text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 15px;
+    text-align: center;
+    color:$text;
+  }
+
+  
+  @mixin Text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 15px;
+    text-align:left;
+    color:$text-2;
+  }
+
+  @mixin Title {
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 35px;
+    text-align: left;
+    color:$text;
+  }
+
+  @mixin Card-bold {
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 25px;
+    text-align: center;
+    color:$text;
+  }
+
+  @mixin Card-text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 18px;
+    text-align: left;
+    color:$text;
+  }

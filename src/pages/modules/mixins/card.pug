@@ -1,0 +1,28 @@
+include button
+mixin card(img,title,drive,power,mileage,year,price)
+    .card 
+        img.card-img(src=`./img/${img}`, alt=title)
+        .card-title=title
+        ul.card-list 
+            li 
+                img(src="./img/drive-unit.svg", alt="drive unit") 
+                |Привод
+                span=drive
+            li 
+                img(src="./img/power-reserve.svg", alt="power reserve") 
+                |Запас хода
+                span=power
+            li 
+                img(src="./img/mileage.svg", alt="mileage") 
+                |Пробег
+                span=mileage
+            li 
+                img(src="./img/year.svg", alt="year") 
+                |Год выпуска
+                span=year
+            li 
+                img(src="./img/price.svg", alt="price") 
+                |Цена
+                span=price
+        +button('Подробнее','#','')
+        

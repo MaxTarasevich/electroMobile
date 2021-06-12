@@ -1,0 +1,62 @@
+.electromob{
+    position: relative;
+    background-image: url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color:$text-2;
+    .container{
+        position: relative;
+        z-index: 5;
+        .electromob-info{
+            padding-top: 18%;
+            padding-bottom: 16%;
+            max-width: 580px;
+            &-title{
+                margin-bottom: 20px;
+                @include Buttons-text;
+                font-size: 44px;
+                text-align: left;
+            }
+            &-text{
+                max-width: 487px;
+                margin-bottom: 22px;
+                @include Text;
+                font-size: 26px;
+            }
+            .btn{
+              margin-right: 46px;
+              width: 45%;
+            }
+            .btn:last-of-type{
+                margin: 0;
+            }
+        }
+        .electromob-icons{
+            display: flex;
+            padding-bottom: 7%;
+            align-items: center;
+            justify-content: space-between;
+            &-item{
+                display: flex;
+                width: 280px;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                  margin-left: 20px;
+                  @include Text;
+                }
+            }
+        }
+    }
+}
+.electromob::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(81.5deg, rgba(0, 0, 0, 0.584) 40.95%, rgba(0, 0, 0, 0) 99.79%);
+z-index: 1;
+}
