@@ -100,10 +100,6 @@ input{
     box-shadow: 0px 9px 49px rgba(142, 136, 136, 0.16);
     border-radius: 10px;
     @include Card-bold;
-    .card-img{
-        width:368px;
-        height: 277px;
-    }
     .card-title{
         padding:  33px 0 26px 0;
     }

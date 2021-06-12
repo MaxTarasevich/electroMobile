@@ -1,0 +1,31 @@
+.advantages{
+    background:$advantages-bg;
+    .container{
+        .advantages-cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items:flex-start;
+            justify-content: space-between;
+            .advantages-card{
+                max-width: 360px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                .advantages-card-content{
+                    width: 75%;
+                    .advantages-card-title{
+                        @include Title;
+                        font-size: 18px;
+                        margin-bottom: 9px;
+                    }
+                    .advantages-card-text{
+                        @include Text;
+                        color:$text;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+}
