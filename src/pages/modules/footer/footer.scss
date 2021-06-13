@@ -1,0 +1,11 @@
+.footer{
+    padding: 4.2% 0;
+    background-color: $footer-bg;
+    .nav,.contacts{
+        background-color: inherit;
+        color:$text-2;
+    }
+    .nav{
+        margin-bottom: 5%;
+    }
+}

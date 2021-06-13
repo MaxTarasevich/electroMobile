@@ -1,66 +1,9 @@
-.header {
-    .header-contacts{
-        background-color: $header-bg;
-        color:$text-2;
-        padding: 30px 0;
+.header{
+    .contacts{
         .container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .contacts-list{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                li{
-                    margin-left: 15px;
-                    @include Buttons-text;
-                }
-                .contacts-list-item{
-                   span{
-                    transition: 0.4s ease-in;
-                   } 
-                    svg{
-                        path{
-                            transition: 0.4s ease-in;
-                        }
-                    }
-                }
-                .contacts-list-item:hover{
-                    svg{
-                        path{
-                            fill:$hover-text;
-                        }
-                    }
-                    span{
-                        color:$hover-text;
-                    }
-                }
-                .contacts-list-btn{
-                    .btn{
-                        padding: 10px 26px;
-                    }
-                    
-                }
-            }
-        }
-    }
-    .nav{
-        background-color: $nav-bg;
-        padding: 15px 0;
-        @include Nav-text;
-        .container{
-            .nav-menu{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                li{
-                    transition: color 0.4s ease-in;
-                }
-                li:hover{
-                    color:$text-1;
-                }
+            .copyright{
+                display: none;
             }
         }
     }
 }
-

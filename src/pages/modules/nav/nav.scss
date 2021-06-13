@@ -1,0 +1,18 @@
+.nav{
+    background-color: $nav-bg;
+    padding: 15px 0;
+    @include Nav-text;
+    .container{
+        .nav-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                transition: color 0.4s ease-in;
+            }
+            li:hover{
+                color:$text-1;
+            }
+        }
+    }
+}
