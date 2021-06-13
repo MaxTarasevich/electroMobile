@@ -19,6 +19,12 @@
                     padding-bottom: 12px;
                     @include Title;
                     font-size: 20px;
+                    a{
+                        transition: color 0.2s ease-in;
+                    }
+                    a:hover{
+                        color:$hover-text;
+                    }
                 }
                 &-text{
                     @include Text;

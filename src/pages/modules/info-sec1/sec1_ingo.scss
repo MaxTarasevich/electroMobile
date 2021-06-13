@@ -1,0 +1,10 @@
+.info{
+    .container{
+        .info-card{
+            margin-bottom: 8%;
+        }
+        .info-card:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+    }
+}
