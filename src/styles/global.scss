@@ -45,6 +45,8 @@ input{
 }
 /*Styles for PUG mixins*/
 
+/*Buttons*/
+
 .btn{
     display: inline-block;
     position: relative;
@@ -89,17 +91,29 @@ input{
     color:$text-1;
 }
 
+/*Titles*/
+
 .title{
     padding-top: 8.3%;
     padding-bottom:6%;
     @include Title;
 }
 
+/*Cards*/
+
 .card{
     padding-bottom: 37px;
     box-shadow: 0px 9px 49px rgba(142, 136, 136, 0.16);
-    border-radius: 10px;
     @include Card-bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    .card-img{
+        width: 100%;
+        height: 217px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+        object-position: center center;
+    }
     .card-title{
         padding:  33px 0 26px 0;
     }
@@ -130,4 +144,7 @@ input{
         margin: 0 auto;
         width: 75%;
     }
+}
+.card:hover{
+transform: scale(1.02);
 }
