@@ -1,0 +1,35 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    .next,.prev{
+        cursor: pointer;
+        width: 18px;
+        transition: transform 0.2s ease-in;
+    }
+    .next:hover,.prev:hover{
+        transform: scale(1.3);
+    }
+    .num{
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        background-color: $input-text;
+        @include Card-bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 18px;
+        transition: transform 0.2s ease-in;
+        cursor:pointer;
+    }
+    .num:hover{
+        transform: scale(1.1);
+    }
+    .num.active{
+        background-color: $text;
+        color: $text-2;
+    }
+}

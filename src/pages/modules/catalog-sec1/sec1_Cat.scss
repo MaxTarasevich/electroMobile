@@ -11,27 +11,5 @@
             }
         }
     }
-    .catalog-pageNum{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-        margin-bottom: 7%;
-        .catalog-num{
-            width: 73px;
-            height: 73px;
-            border-radius: 50%;
-            background-color: $input-text;
-            @include Card-bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 18px;
-            cursor:pointer;
-        }
-        .catalog-num.active{
-            background-color: $text;
-            color: $text-2;
-        }
-    }
+  
 }
