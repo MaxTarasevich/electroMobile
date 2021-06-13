@@ -1,9 +1,9 @@
-.info{
+.inform{
     .container{
-        .info-card{
+        .inform-card{
             margin-bottom: 8%;
         }
-        .info-card:nth-child(odd){
+        .inform-card:nth-child(odd){
             flex-direction: row-reverse;
         }
     }

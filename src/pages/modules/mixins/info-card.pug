@@ -1,9 +1,9 @@
 include button
 mixin info-card(images,title,text,)
-    .info-card 
+    .inform-card 
         img(src=`./img/${images}`, alt=title)
-        .info-card-content 
-            h3.info-card-title
+        .inform-card-content 
+            h3.inform-card-title
                 a(href="#")=title 
-            p.info-card-text=text 
+            p.inform-card-text=text 
             +button('Подробнее','#','')
