@@ -6,29 +6,24 @@
             align-items: flex-start;
             justify-content: space-between;
             margin-bottom: 8%;
-            .info-card{
-                max-width: 370px;
+            .inform-card{
+                flex-direction: column;
+                width: 370px;
+                height: auto;
                 img{
                     width:100%;
                     height: 217px;
-                    object-fit: cover;
-                    object-position: center center;
+                    margin-bottom: 10%;
+                }
+                .inform-card-content{
+                    width: 100%;
+                    .btn{
+                        display: none;
+                    }
                 }
                 &-title{
-                    padding-top: 40px;
-                    padding-bottom: 12px;
                     @include Title;
                     font-size: 20px;
-                    a{
-                        transition: color 0.2s ease-in;
-                    }
-                    a:hover{
-                        color:$hover-text;
-                    }
-                }
-                &-text{
-                    @include Text;
-                    color:$text;
                 }
             }
         }
