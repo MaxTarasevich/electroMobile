@@ -17,3 +17,11 @@ $header-bg:#172027;
 $nav-bg:#F2F2F3;
 $advantages-bg:#EEEEEE;
 $footer-bg:#797C7D;
+
+/*Mixin*/
+@mixin media-custom($width) {
+
+    @media (max-width: $width) {
+        @content;
+    }
+}

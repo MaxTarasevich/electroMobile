@@ -45,6 +45,12 @@ input{
 .container{
     max-width: 1150px;
     margin: 0 auto;
+    @include media-custom(1250px){
+        max-width: 90%;
+    }
+    @include media-custom(600px){
+        max-width: 95%;
+    }
 }
 /*Styles for PUG mixins*/
 
