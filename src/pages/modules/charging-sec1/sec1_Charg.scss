@@ -1,0 +1,73 @@
+.chargingNet{
+    .chargingNet-mapTemp{
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+    .container{
+        .chargingNet-form{
+            display: flex;
+            width: 100%;
+            margin: 8.7% 0;
+            .chargingNet-form-img{
+                width: 48%;
+                object-fit:cover;
+                object-position:center;
+                filter: drop-shadow(0px 5px 48px rgba(49, 47, 47, 0.1));
+            }
+            &-group{
+                display: flex;
+                width: 52%;
+                flex-direction: column;
+                padding: 6.8% 6% 7% 5%;
+                box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+            }
+            &-title{
+                @include Title ;
+                font-size: 20px;
+                line-height: 1.8;
+            }
+            &-subtitle{
+                @include Text;
+                color:$text;
+                margin-bottom: 6.5%;
+            }
+            &-input,&-textarea{
+                padding: 17px 32px;
+                margin-bottom: 15px;
+                box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+                border-radius: 43px;
+            }
+            &-textarea{
+                border-radius: 10px;
+                outline: none;
+                border:none;
+                resize: none;
+            }
+            &-input::placeholder,&-textarea::placeholder{
+                color:$input-text;
+            }
+            &-radioGrp{
+                margin-bottom: 15px;
+                input{
+                    width: 13px;
+                    height: 13px;
+                }
+                label{
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+            .btn{
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color: #fff;
+                color:$hover-text;
+            }
+            
+        }
+    }
+}

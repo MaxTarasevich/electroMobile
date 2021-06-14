@@ -46,7 +46,28 @@
         </div>
       </nav>
     </header>
-    <p>Charging</p>
+    <section class="chargingNet"> 
+      <div class="container"> 
+            <h2 class="title">Сеть зарядок</h2>
+      </div>
+      <div class="chargingNet-mapTemp"> <img src="./img/map-temp.jpg" alt="charging map"></div>
+      <div class="container"> 
+        <form class="chargingNet-form" action="#"> <img class="chargingNet-form-img" src="./img/chargin-form-image.jpg" alt="form image">
+          <div class="chargingNet-form-group"> 
+            <h4 class="chargingNet-form-title">Где открыть следующую станцию подзарядки?</h4>
+            <h5 class="chargingNet-form-subtitle">Есть идеи, напишите нам.</h5>
+            <input class="chargingNet-form-input" type="text" name="name" required placeholder="Имя">
+            <input class="chargingNet-form-input" type="tel" name="telephone" required placeholder="Телефон">
+            <textarea class="chargingNet-form-textarea" name="address" cols="30" rows="10" required placeholder="Место для новой зарядной станции"></textarea>
+            <div class="chargingNet-form-radioGrp"> 
+              <input id="radio" type="radio" name="radio" required>
+              <label for="radio"> Да, мне было бы удобно заряжаться в предложенном мной месте</label>
+            </div>
+            <input class="btn" type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </section>
     <footer class="footer"> 
       <nav class="nav">
         <div class="container">

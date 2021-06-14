@@ -1,0 +1,18 @@
+section.chargingNet 
+    .container 
+        +title('Сеть зарядок')
+    .chargingNet-mapTemp 
+        img(src="./img/map-temp.jpg", alt="charging map")
+    .container 
+        form.chargingNet-form(action="#") 
+            img.chargingNet-form-img(src="./img/chargin-form-image.jpg", alt="form image")
+            .chargingNet-form-group 
+                h4.chargingNet-form-title Где открыть следующую станцию подзарядки?
+                h5.chargingNet-form-subtitle Есть идеи, напишите нам.
+                input.chargingNet-form-input(type="text", name="name", required, placeholder="Имя")
+                input.chargingNet-form-input(type="tel", name="telephone", required, placeholder="Телефон")
+                textarea.chargingNet-form-textarea(name="address", cols="30", rows="10", required, placeholder="Место для новой зарядной станции" )
+                .chargingNet-form-radioGrp 
+                    input#radio(type="radio", name="radio", required)
+                    label(for="radio")  Да, мне было бы удобно заряжаться в предложенном мной месте
+                input.btn(type="submit", value="Отправить")
