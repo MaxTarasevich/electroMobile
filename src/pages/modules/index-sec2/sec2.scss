@@ -5,10 +5,19 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 60px;
+            margin-bottom: 5%;
+            @include media-custom(1250px){
+                justify-content: space-evenly;
+            }
             .card{
                 width: 368px;
+              margin-right: 10px;
+              margin-bottom: 20px;
+              @include media-custom(600px){
+                margin-right: 0;
             }
+            }
+            
         }
         .btn.red{
             display: block;
