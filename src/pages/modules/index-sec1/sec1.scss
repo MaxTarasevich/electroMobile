@@ -76,6 +76,9 @@
                 align-items: center;
                 justify-content: space-between;
                 margin-bottom: 20px;
+                img{
+                    width: 55px;
+                }
                 p{
                   margin-left: 20px;
                   @include Text;

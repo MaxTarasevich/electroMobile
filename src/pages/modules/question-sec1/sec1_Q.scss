@@ -2,6 +2,10 @@
     .container{
         .btn{
             width: 263px;
+            @include media-custom(900px){
+                display: block;
+                margin: 0 auto;
+            }
         }
         .questions-blocks{
             margin-bottom: 8.7%;
@@ -14,6 +18,9 @@
                 &-title{
                     @include Title;
                     font-size: 20px;
+                    @include media-custom(600px){
+                        font-size: 20px;
+                    }
                 }
                 &-text{
                     display: none;

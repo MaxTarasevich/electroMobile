@@ -24,6 +24,10 @@
         margin: 18px;
         transition: transform 0.2s ease-in;
         cursor:pointer;
+        @include media-custom(800px){
+            width: 50px;
+            height: 50px;
+        }
     }
     .num:hover{
         transform: scale(1.1);

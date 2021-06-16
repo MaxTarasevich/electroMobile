@@ -5,19 +5,32 @@
             display: flex;
             flex-wrap: wrap;
             align-items:flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
             .advantages-card{
                 max-width: 360px;
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
                 margin-bottom: 50px;
+                @include media-custom(800px){
+                    max-width: 100%;
+                    justify-content: space-evenly;
+                }
+                img{
+                    width: 73px;
+                    @include media-custom(500px){
+                        width: 50px;
+                    }
+                }
                 .advantages-card-content{
                     width: 75%;
                     .advantages-card-title{
                         @include Title;
                         font-size: 18px;
                         margin-bottom: 9px;
+                        @include media-custom(600px){
+                            font-size: 18px;
+                        }
                     }
                     .advantages-card-text{
                         @include Text;
