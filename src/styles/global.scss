@@ -212,3 +212,94 @@ transform: scale(1.02);
         width: 263px;
     }
 }
+/*Global styles for form*/
+.input-croup{
+    position: relative;
+    input.input-error, textarea.input-error.invalid{
+        border: 1px solid $text-1;
+    }
+    input.input-error::placeholder, textarea.input-error.invalid::placeholder{
+        color: $text-1;
+    }
+    .hidden {
+        display: none;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 17%; 
+        right: 10px;
+        pointer-events: none;
+        z-index: 2;
+    }
+    textarea ~ .icon{
+        top: 5%; 
+    }
+    .icon.icon-success {
+        fill: $hover-text;
+  }
+      
+  .icon.icon-error {
+        fill:$text-1;
+  }
+  .error-message{
+    position: absolute;
+    bottom:2%;
+    left: 5%;
+    color: $text-1;
+    font-size: 14px;
+}
+}
+/*************************Custom checkbox****************************/
+
+    .custom__checkbox{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 13px;
+        cursor: pointer;
+        user-select: none;
+        color: inherit;
+        margin-bottom: 15px;
+        padding-left: 40px;
+    }
+    .custom__checkbox input{
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .custom__checkbox .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border-radius:50%;
+        border: 2px solid #C6C5C5;
+        background-color: #ffffff;
+    }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .custom__checkbox input:checked ~.checkmark:after {
+        display: block;
+      }
+     
+      .custom__checkbox.error{
+          color: red;
+      }
+      .custom__checkbox .checkmark:after {
+        left: 25%;
+        top: 20%;
+        width: 8px;
+        height: 8px;
+        border-radius:50%;
+       background-color: #C6C5C5;
+       
+      }
+

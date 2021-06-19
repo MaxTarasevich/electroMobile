@@ -57,6 +57,7 @@
                 margin-bottom: 6.5%;
             }
             &-input,&-textarea{
+                width: 100%;
                 padding: 17px 32px;
                 margin-bottom: 15px;
                 box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
@@ -67,20 +68,6 @@
                 outline: none;
                 border:none;
                 resize: none;
-            }
-            &-input::placeholder,&-textarea::placeholder{
-                color:$input-text;
-            }
-            &-radioGrp{
-                margin-bottom: 15px;
-                input{
-                    width: 13px;
-                    height: 13px;
-                }
-                label{
-                    font-size: 13px;
-                    cursor: pointer;
-                }
             }
             .btn{
                 cursor: pointer;
