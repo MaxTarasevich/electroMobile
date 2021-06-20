@@ -121,16 +121,34 @@ class FormValidator {
     }
   }
   
+
+/* Initialize validation for all forms in website*/ 
+
   const form = document.querySelector('#form')
   if(form != null){
     const fields = ["telephone","name","message","checkbox"]
     const validator = new FormValidator(form, fields)
     validator.initialize()
   }
+
   const testDriveForm = document.querySelector(`#form-test-drive`)
   if(testDriveForm != null){
     const fields = ["name-test-drive","telephone-test-drive","checkbox-test-drive", "select-date", "select-time"]
     const validator = new FormValidator(testDriveForm, fields)
+    validator.initialize()
+  }
+
+  const callbackForm = document.querySelector(`#form-callback`)
+  if(callbackForm != null){
+    const fields = ["name-callback","telephone-callback","checkbox-callback"]
+    const validator = new FormValidator(callbackForm, fields)
+    validator.initialize()
+  }
+
+  const rentForm = document.querySelector(`#form-rent`)
+  if(rentForm != null){
+    const fields = ["name-rent","telephone-rent","select-rent-date", "select-rent-time", "checkbox-rent"]
+    const validator = new FormValidator(rentForm, fields)
     validator.initialize()
   }
  

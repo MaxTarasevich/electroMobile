@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Запись на тест драйв</title>
+    <title>Заказать обратный звонок</title>
   </head>
   <body> 
     <header class="header"> 
@@ -48,11 +48,11 @@
     </header>
     <section class="testDrive"> 
       <div class="container"> 
-        <form class="testDrive-form" id="form-test-drive"> <img class="testDrive-form-img" src="./img/test-drive-form.jpg" alt="form image">
-          <div class="testDrive-form-group"> 
-            <h4 class="testDrive-form-title">Запись на тест драйв</h4>
+        <form class="callback-form" id="form-callback"> <img class="callback-form-img" src="./img/callback-form.jpg" alt="form image">
+          <div class="callback-form-group"> 
+            <h4 class="callback-form-title">Заказать обратный звонок</h4>
             <div class="input-croup">
-              <input class="testDrive-form-input invalid" id="name-test-drive" type="text" name="name" placeholder="Имя" data-name="Имя">
+              <input class="callback-form-input invalid" id="name-callback" type="text" name="name" placeholder="Имя" data-name="Имя">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -61,7 +61,7 @@
               </svg>
             </div>
             <div class="input-croup">
-              <input class="testDrive-form-input invalid" id="telephone-test-drive" type="tel" name="telephone" placeholder="Телефон">
+              <input class="callback-form-input invalid" id="telephone-callback" type="tel" name="telephone" placeholder="Телефон">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -69,28 +69,10 @@
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <div class="select-group">
-              <div class="custom-select invalid" id="select-date">Дата
-                <select name="theme">
-                  <option value="0">Выберите дату</option>
-                  <option value="21.08.2021">21.08.2021</option>
-                  <option value="21.09.2021">21.09.2021</option>
-                  <option value="21.10.2021">21.10.2021</option>
-                </select>
-              </div>
-              <div class="custom-select invalid" id="select-time">Время
-                <select name="theme">
-                  <option value="0"> Выберите время</option>
-                  <option value="13:00"> 13:00</option>
-                  <option value="15:00"> 15:00</option>
-                  <option value="17:00"> 17:00</option>
-                </select>
-              </div>
-            </div>
-            <label class="custom__checkbox invalid" for="checkbox-test-drive">Я принимаю пользовательское соглашение
-              <input id="checkbox-test-drive" type="checkbox" name="checkbox"><span class="checkmark"></span>
+            <label class="custom__checkbox invalid" for="checkbox-callback">Я принимаю пользовательское соглашение
+              <input id="checkbox-callback" type="checkbox" name="checkbox-callback"><span class="checkmark"></span>
             </label>
-            <input class="btn" type="submit" value="Записаться">
+            <input class="btn" type="submit" value="Отправить">
           </div>
         </form>
       </div>

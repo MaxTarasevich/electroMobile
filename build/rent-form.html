@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Запись на тест драйв</title>
+    <title>Аренда авто</title>
   </head>
   <body> 
     <header class="header"> 
@@ -46,13 +46,13 @@
         </div>
       </nav>
     </header>
-    <section class="testDrive"> 
+    <section class="rent"> 
       <div class="container"> 
-        <form class="testDrive-form" id="form-test-drive"> <img class="testDrive-form-img" src="./img/test-drive-form.jpg" alt="form image">
-          <div class="testDrive-form-group"> 
-            <h4 class="testDrive-form-title">Запись на тест драйв</h4>
+        <form class="rent-form" id="form-rent"> <img class="rent-form-img" src="./img/rent-form.jpg" alt="form image">
+          <div class="rent-form-group"> 
+            <h4 class="rent-form-title">Аренда авто</h4>
             <div class="input-croup">
-              <input class="testDrive-form-input invalid" id="name-test-drive" type="text" name="name" placeholder="Имя" data-name="Имя">
+              <input class="rent-form-input invalid" id="name-rent" type="text" name="name" placeholder="Имя" data-name="Имя">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -61,7 +61,7 @@
               </svg>
             </div>
             <div class="input-croup">
-              <input class="testDrive-form-input invalid" id="telephone-test-drive" type="tel" name="telephone" placeholder="Телефон">
+              <input class="rent-form-input invalid" id="telephone-rent" type="tel" name="telephone" placeholder="Телефон">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -70,7 +70,7 @@
               </svg>
             </div>
             <div class="select-group">
-              <div class="custom-select invalid" id="select-date">Дата
+              <div class="custom-select invalid" id="select-rent-date">Дата аренды
                 <select name="theme">
                   <option value="0">Выберите дату</option>
                   <option value="21.08.2021">21.08.2021</option>
@@ -78,7 +78,7 @@
                   <option value="21.10.2021">21.10.2021</option>
                 </select>
               </div>
-              <div class="custom-select invalid" id="select-time">Время
+              <div class="custom-select invalid" id="select-rent-time">Время аренды
                 <select name="theme">
                   <option value="0"> Выберите время</option>
                   <option value="13:00"> 13:00</option>
@@ -87,8 +87,8 @@
                 </select>
               </div>
             </div>
-            <label class="custom__checkbox invalid" for="checkbox-test-drive">Я принимаю пользовательское соглашение
-              <input id="checkbox-test-drive" type="checkbox" name="checkbox"><span class="checkmark"></span>
+            <label class="custom__checkbox invalid" for="checkbox-rent">Я принимаю пользовательское соглашение
+              <input id="checkbox-rent" type="checkbox" name="checkbox"><span class="checkmark"></span>
             </label>
             <input class="btn" type="submit" value="Записаться">
           </div>
