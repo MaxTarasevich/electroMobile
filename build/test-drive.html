@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Электромобили</title>
+    <title>Запись на тест драйв</title>
   </head>
   <body> 
     <header class="header"> 
@@ -46,134 +46,53 @@
         </div>
       </nav>
     </header>
-    <section class="electromob"> 
+    <section class="testDrive"> 
       <div class="container"> 
-        <div class="electromob-info"> 
-          <h1 class="electromob-info-title">Электромобили в&nbsp;Липецке в&nbsp;наличии</h1>
-          <p class="electromob-info-text">Узнайте, как использовать самый экологичный автомобиль в повседневной жизни</p><a class="btn" href="test-drive.html"><span>Тест драйв</span></a><a class="btn red" href="#"><span>Аренда электромобиля</span></a>
-        </div>
-        <div class="electromob-icons"> 
-          <div class="electromob-icons-item"> <img src="./img/community-icon.svg" alt="community icon">
-            <p>Приобщись к сообществу любителей современных экологичных  автомобилей</p>
-          </div>
-          <div class="electromob-icons-item"><img src="./img/info-icon.svg" alt="info icon">
-            <p>Полезная информация об электромобилях</p>
-          </div>
-          <div class="electromob-icons-item"><img src="./img/battery-icon.svg" alt="battery icon">
-            <p>Развитая сеть зарядных устройств</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cars">
-      <div class="container"> 
-            <h2 class="title">Электромобили в Липецке </h2>
-        <div class="cars-cards"> 
-              <div class="card"> <img class="card-img" src="./img/BMW.jpg" alt="2019 BMW i3">
-                <div class="card-title">2019 BMW i3</div>
-                <ul class="card-list"> 
-                  <li> <img src="./img/drive-unit.svg" alt="drive unit">Привод<span>rwd</span></li>
-                  <li> <img src="./img/power-reserve.svg" alt="power reserve">Запас хода<span>350 км + ДВС</span></li>
-                  <li> <img src="./img/mileage.svg" alt="mileage">Пробег<span>5177 миль</span></li>
-                  <li> <img src="./img/year.svg" alt="year">Год выпуска<span>2019</span></li>
-                  <li> <img src="./img/price.svg" alt="price">Цена<span>15800 $</span></li>
-                </ul><a class="btn" href="about-car.html"><span>Подробнее</span></a>
-              </div>
-              <div class="card"> <img class="card-img" src="./img/tesla.jpg" alt="2018 Tesla Model 3 Mid">
-                <div class="card-title">2018 Tesla Model 3 Mid</div>
-                <ul class="card-list"> 
-                  <li> <img src="./img/drive-unit.svg" alt="drive unit">Привод<span>rwd</span></li>
-                  <li> <img src="./img/power-reserve.svg" alt="power reserve">Запас хода<span>420 км</span></li>
-                  <li> <img src="./img/mileage.svg" alt="mileage">Пробег<span>15534 миль</span></li>
-                  <li> <img src="./img/year.svg" alt="year">Год выпуска<span>2018</span></li>
-                  <li> <img src="./img/price.svg" alt="price">Цена<span>16800 $</span></li>
-                </ul><a class="btn" href="about-car.html"><span>Подробнее</span></a>
-              </div>
-              <div class="card"> <img class="card-img" src="./img/chevrolet.jpg" alt="2016 Chevrolet Volt II">
-                <div class="card-title">2016 Chevrolet Volt II</div>
-                <ul class="card-list"> 
-                  <li> <img src="./img/drive-unit.svg" alt="drive unit">Привод<span>fwd</span></li>
-                  <li> <img src="./img/power-reserve.svg" alt="power reserve">Запас хода<span>85 км + ДВС</span></li>
-                  <li> <img src="./img/mileage.svg" alt="mileage">Пробег<span>26097 миль</span></li>
-                  <li> <img src="./img/year.svg" alt="year">Год выпуска<span>2016</span></li>
-                  <li> <img src="./img/price.svg" alt="price">Цена<span>16800 $</span></li>
-                </ul><a class="btn" href="about-car.html"><span>Подробнее</span></a>
-              </div>
-        </div><a class="btn red" href="catalog.html"><span>Посмотреть все автомобили</span></a>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="container"> 
-            <h2 class="title">Преимущества электротранспорта</h2>
-        <div class="advantages-cards">
-          <div class="advantages-card"><img src="./img/eco-icon.svg" alt="eco icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Экологичность</h3>
-              <p class="advantages-card-text">Экологически чистый транспорт не загрязняет окружающую среду лишним шумом, выхлопными газами и другими вредными выбросами. Большое количество электромобилей благоприятно сказывается         на экологии больших городов     с насыщенным трафиком.</p>
+        <form class="testDrive-form" id="form-test-drive"> <img class="testDrive-form-img" src="./img/test-drive-form.jpg" alt="form image">
+          <div class="testDrive-form-group"> 
+            <h4 class="testDrive-form-title">Запись на тест драйв</h4>
+            <div class="input-croup">
+              <input class="testDrive-form-input invalid" id="name-test-drive" type="text" name="name" placeholder="Имя" data-name="Имя">
+              <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
             </div>
-          </div>
-          <div class="advantages-card"><img src="./img/ergo-icon.svg" alt="ergo icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Эргономичность</h3>
-              <p class="advantages-card-text">Благодаря отсутствию ДВС,в салоне электрического авто больше места. Также, зачастую, электромобили имеют два багажника: спереди          и сзади, что является довольно весомым аргументом в пользу электромобилей, как семейных авто.</p>
+            <div class="input-croup">
+              <input class="testDrive-form-input invalid" id="telephone-test-drive" type="tel" name="telephone" placeholder="Телефон">
+              <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <svg class="icon icon-error hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
             </div>
-          </div>
-          <div class="advantages-card"><img src="./img/safe-icon.svg" alt="safe icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Безопасность</h3>
-              <p class="advantages-card-text">Чаще всего, в электромобилях используются инновационные технологии, и отрасль безопасноти не исключение. Помимо этого, благодаря отсутсвию топливного бака и, как следствие, сгораемого топлива в автомобиле, уменьшается риск возгораний и пожаров.</p>
-            </div>
-          </div>
-          <div class="advantages-card"><img src="./img/advantage-icon.svg" alt="advantage icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Топливное преимущество</h3>
-              <p class="advantages-card-text">Электричество гораздо дешевле привычного нам, сгораемого, топлива. Также, электродвигатель признается более надежным и беспроблемным, по сравнению с ДВС.</p>
-            </div>
-          </div>
-          <div class="advantages-card"><img src="./img/simple-icon.svg" alt="simple icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Простой сервис</h3>
-              <p class="advantages-card-text">"Зелёные" автомобили не требуют замены расходников, характерных для бензиновых и дизельных авто. Благодаря этому плановое ТО для авто на электротяге довольно простое: диагностика ходовой, батареи и программные обновления.</p>
-            </div>
-          </div>
-          <div class="advantages-card"><img src="./img/benefit-icon.svg" alt="benefit icon">
-            <div class="advantages-card-content"> 
-              <h3 class="advantages-card-title">Выгода использования</h3>
-              <p class="advantages-card-text">Наличие электрического, и другого "зелёного" транспорта, позволяет сэкономить на топливе, запчастях и тех.обслуживании. Также, государство предлагает некоторые льготы и послабления для владельцев таких авто.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="map"> 
-      <div class="container">
-            <h2 class="title">Карта электрозаправок</h2>
-      </div>
-      <div class="map-img"></div>
-    </section>
-    <section class="info"> 
-      <div class="container"> 
-            <h2 class="title">Полезные материалы</h2>
-        <div class="info-cards"> 
-              <div class="inform-card"> <img src="./img/info-chevr-bolt-2021.jpg" alt="Chevrolet Bolt 2021: только хорошие новости! Обновился, снизил цену, обзавелся новой версией и получил автопилот второго уровня.">
-                <div class="inform-card-content"> 
-                  <h3 class="inform-card-title"><a href="news-article.html">Chevrolet Bolt 2021: только хорошие новости! Обновился, снизил цену, обзавелся новой версией и получил автопилот второго уровня.</a></h3>
-                  <p class="inform-card-text">В Беларуси Chevrolet Bolt набирает популярность, ведь он является одним из самых доступных подержанных электрокаров с большим пробегом на одной зарядке. А на американском рынке уже появилась обновленная версия. Причем не одна: обновленный Chevrolet Bolt EV обзавелся “братом” в виде кроссоверной версии Chevrolet Bolt EUV.</p><a class="btn" href="news-article.html"><span>Подробнее</span></a>
-                </div>
+            <div class="select-group">
+              <div class="custom-select invalid" id="select-date">Дата
+                <select name="theme">
+                  <option value="0">Выберите дату</option>
+                  <option value="21.08.2021">21.08.2021</option>
+                  <option value="21.09.2021">21.09.2021</option>
+                  <option value="21.10.2021">21.10.2021</option>
+                </select>
               </div>
-              <div class="inform-card"> <img src="./img/info-model-S.jpg" alt="Обновленные Model S и Model X: все модификации, характеристики, цены.">
-                <div class="inform-card-content"> 
-                  <h3 class="inform-card-title"><a href="news-article.html">Обновленные Model S и Model X: все модификации, характеристики, цены.</a></h3>
-                  <p class="inform-card-text">Лифтбек Tesla Model S выпускается с 2012 года - и все это время он оставался неизменным. Но сегодня компания просто ошарашила поклонников новостями о кардинальном обновлении модельного ряда. Представлены новые модификации Tesla Model S и Tesla Model X,  а также “горячие” версии Tesla Model S Plaid и Tesla Model S Plaid+.</p><a class="btn" href="news-article.html"><span>Подробнее</span></a>
-                </div>
+              <div class="custom-select invalid" id="select-time">Время
+                <select name="theme">
+                  <option value="0"> Выберите время</option>
+                  <option value="13:00"> 13:00</option>
+                  <option value="15:00"> 15:00</option>
+                  <option value="17:00"> 17:00</option>
+                </select>
               </div>
-              <div class="inform-card"> <img src="./img/info-ford-mustang.jpg" alt="Что мы знаем об электрическом Ford Mustang?">
-                <div class="inform-card-content"> 
-                  <h3 class="inform-card-title"><a href="news-article.html">Что мы знаем об электрическом Ford Mustang?</a></h3>
-                  <p class="inform-card-text">Ходят слухи, что Ford Mustang Mach-E выйдет сразу же после окончания карантина. В сегодняшнем выпуске мы расскажем о всём, что известно о новом &quot;Мустанге&quot; от компании Ford.</p><a class="btn" href="news-article.html"><span>Подробнее</span></a>
-                </div>
-              </div>
-        </div>
+            </div>
+            <label class="custom__checkbox invalid" for="checkbox-test-drive">Я принимаю пользовательское соглашение
+              <input id="checkbox-test-drive" type="checkbox" name="checkbox"><span class="checkmark"></span>
+            </label>
+            <input class="btn" type="submit" value="Записаться">
+          </div>
+        </form>
       </div>
     </section>
     <footer class="footer"> 

@@ -303,3 +303,66 @@ transform: scale(1.02);
        
       }
 
+      /**********************Custom Select*********************/
+  .custom-select {
+    width: 180px;
+    margin: 5px;
+    position: relative;
+   @include Text;
+    border: none;
+    color:inherit;
+  }
+  .custom-select.error{
+    color:red;
+  }
+  .custom-select select {
+    display: none; 
+  }
+  .select-selected {
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+  }
+  .select-selected:after {
+    position: absolute;
+    content: "";
+   bottom:25%;
+    right: 22px;
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+  .select-selected.select-arrow-active{
+    border-radius: 10px 10px 0 0 ;
+  }
+  .select-selected.select-arrow-active:after {
+    border-width:  1px 0 0 1px ;
+    bottom:20%;
+  }
+  .select-items{
+    border-radius: 0 0 10px 10px;
+  }
+  .select-items div{
+    padding: 5px 15px 5px 15px;
+  }
+  .select-items div,.select-selected {
+    cursor: pointer;
+  }
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }  
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

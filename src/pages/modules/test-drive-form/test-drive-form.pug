@@ -1,0 +1,35 @@
+section.testDrive 
+    .container 
+        form#form-test-drive.testDrive-form 
+            img.testDrive-form-img(src="./img/test-drive-form.jpg", alt="form image")
+            .testDrive-form-group 
+                h4.testDrive-form-title Запись на тест драйв
+                .input-croup
+                    input#name-test-drive.testDrive-form-input.invalid(type="text", name="name", placeholder="Имя" data-name="Имя")
+                    svg.icon.icon-success.hidden(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor')
+                        path(fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd')
+                    svg.icon.icon-error.hidden(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor')
+                        path(fill-rule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z' clip-rule='evenodd')
+                .input-croup
+                    input#telephone-test-drive.testDrive-form-input.invalid(type="tel", name="telephone", placeholder="Телефон")
+                    svg.icon.icon-success.hidden(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor')
+                        path(fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd')
+                    svg.icon.icon-error.hidden(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 20 20' fill='currentColor')
+                        path(fill-rule='evenodd' d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z' clip-rule='evenodd')
+                .select-group
+                    .custom-select.invalid#select-date Дата
+                        select(name='theme')
+                            option(value='0') Выберите дату
+                            option(value='21.08.2021') 21.08.2021
+                            option(value='21.09.2021') 21.09.2021
+                            option(value='21.10.2021') 21.10.2021
+                    .custom-select.invalid#select-time Время
+                        select(name='theme')
+                            option(value='0')  Выберите время
+                            option(value='13:00')  13:00
+                            option(value='15:00')  15:00
+                            option(value='17:00')  17:00
+                label.custom__checkbox.invalid(for='checkbox-test-drive') Я принимаю пользовательское соглашение
+                    input#checkbox-test-drive(type='checkbox' name='checkbox' )
+                    span.checkmark
+                input.btn(type="submit", value="Записаться")
