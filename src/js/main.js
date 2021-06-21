@@ -158,7 +158,22 @@ class FormValidator {
     const validator = new FormValidator(questionForm, fields)
     validator.initialize()
   }
- 
+ /************Accordion in question block *****************/
+ const questionBloks = document.querySelectorAll(`.questions-block`)
+ function removeOpenClass (){
+  questionBloks.forEach((el) => {
+    el.classList.remove(`open`)
+})
+ }
+ if(questionBloks != null){
+   questionBloks.forEach((block) =>{
+     
+    block.addEventListener(`click`, () =>{
+      removeOpenClass ()
+      block.classList.add(`open`)
+    })
+   })
+ }
 
 /**************Custom Select**************************/
 var x, i, j, l, ll, selElmnt, a, b, c;

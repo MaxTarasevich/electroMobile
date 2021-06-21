@@ -2,7 +2,7 @@ section.aboutCar
     .container 
         .aboutCar-images
             .aboutCar-images-main 
-                img(src="./img/tesla.jpg", alt="2018 Tesla Model 3 Mid Range")
+                img(src="./img/tesla.jpg",  loading="lazy", alt="2018 Tesla Model 3 Mid Range")
             .aboutCar-images-description
                 h3.aboutCar-images-title 2018 Tesla Model 3 Mid Range
                 ul.aboutCar-images-list 
@@ -41,12 +41,12 @@ section.aboutCar
                         span 201 км/ч
 
             .aboutCar-images-carusel 
-                img.prev(src="./img/prev.svg", alt="previous")
-                img.next(src="./img/next.svg", alt="next")
-                img(src="./img/tesla-1.jpg", alt="tesla photo 1")
-                img(src="./img/tesla-2.jpg", alt="tesla photo 2")
-                img(src="./img/tesla-3.jpg", alt="tesla photo 3")
-                img(src="./img/tesla-4.jpg", alt="tesla photo 4")
+                img.prev(src="./img/prev.svg",  loading="lazy", alt="previous")
+                img.next(src="./img/next.svg",  loading="lazy", alt="next")
+                img(src="./img/tesla-1.jpg",  loading="lazy", alt="tesla photo 1")
+                img(src="./img/tesla-2.jpg",  loading="lazy", alt="tesla photo 2")
+                img(src="./img/tesla-3.jpg",  loading="lazy", alt="tesla photo 3")
+                img(src="./img/tesla-4.jpg",  loading="lazy", alt="tesla photo 4")
         .aboutCar-text
             h3.aboutCar-text-title Описание
             p TESLA MODEL 3 Mid Range
@@ -54,5 +54,5 @@ section.aboutCar
             p Очень динамичный и вместительный электромобиль. Разгон до 100км за 5.6сек. Конец 2018 года, на процессоре Intel. Запас хода в среднем 420км, зарядка от CHADEMO 1 час 30 минут, зарядка от сети 220 около 9.5часов. Ёмкость Батареи 66kВт. Максимальная скорость 200км\ч.
             p Хорошая комплектация: кожаный салон, Подогревы сидений передних, климат контроль, бесключевой доступ, центральный замок, электро стекла и электро зеркала, складывания зеркал, датчик света и дождя, литые диски R19, порт быстрой зарядки CHADEMO, камера заднего вида, автопарковка, круиз контроль, заводская сигнализация, ABS и др. опции. 
         .aboutCar-buttons 
-            +button('Записаться на Тест драйв','#','')
-            +button('Взять в аренду','#','red')
+            +button('Записаться на Тест драйв','test-drive.html','')
+            +button('Взять в аренду','rent-form.html','red')
