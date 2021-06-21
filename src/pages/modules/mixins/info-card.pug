@@ -1,9 +1,0 @@
-include button
-mixin info-card(images,title,text,href)
-    .inform-card 
-        img(src=`./img/${images}`,  loading="lazy", alt=title)
-        .inform-card-content 
-            h3.inform-card-title
-                a(href=href)=title 
-            p.inform-card-text=text 
-            +button('Подробнее',href,'')
