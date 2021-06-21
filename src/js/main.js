@@ -151,6 +151,13 @@ class FormValidator {
     const validator = new FormValidator(rentForm, fields)
     validator.initialize()
   }
+
+  const questionForm = document.querySelector(`#form-question`)
+  if(questionForm != null){
+    const fields = ["name-question","telephone-question","message-question", "checkbox-question"]
+    const validator = new FormValidator(questionForm, fields)
+    validator.initialize()
+  }
  
 
 /**************Custom Select**************************/

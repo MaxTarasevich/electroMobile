@@ -1,0 +1,73 @@
+.questionForm{
+    .container{
+        .questionForm-form{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 8.7% 0;
+            .questionForm-form-img{
+                width: 48%;
+                object-fit:cover;
+                object-position:center;
+                filter: drop-shadow(0px 5px 48px rgba(49, 47, 47, 0.1));
+                @include media-custom(900px){
+                    display: none;
+                }
+            }
+            &-group{
+                display: flex;
+                width: 52%;
+                flex-direction: column;
+                padding: 3.8% 3% 4% 2%;
+                box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+                @include media-custom(900px){
+                    width: 80%;
+                    margin: 0 auto;
+                    background-image: url('../img/question-form.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                @include media-custom(700px){
+                    width: 95%;
+                }
+            }
+            &-title{
+                @include Title ;
+                font-size: 20px;
+                line-height: 1.8;
+                text-align: center;
+                @include media-custom(600px){
+                    font-size: 20px;
+                }
+            }
+            &-subtitle{
+                @include Text;
+                color:$text;
+                text-align: center;
+                margin-bottom: 6.5%;
+            }
+            &-input,&-textarea{
+                width: 100%;
+                padding: 17px 32px;
+                margin-bottom: 15px;
+                box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.1);
+                border-radius: 43px;
+            }
+            &-textarea{
+                border-radius: 10px;
+                outline: none;
+                border:none;
+                resize: none;
+            }
+            .btn{
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color: #fff;
+                color:$hover-text;
+            }
+            
+        }
+    }
+}

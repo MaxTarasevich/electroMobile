@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Сеть зарядных станций</title>
+    <title>Задать вопрос</title>
   </head>
   <body> 
     <header class="header"> 
@@ -46,18 +46,14 @@
         </div>
       </nav>
     </header>
-    <section class="chargingNet"> 
+    <section class="questionForm"> 
       <div class="container"> 
-            <h2 class="title">Сеть зарядок</h2>
-      </div>
-      <div class="chargingNet-mapTemp"> <img src="./img/map-temp.jpg" alt="charging map"></div>
-      <div class="container"> 
-        <form class="chargingNet-form" id="form"> <img class="chargingNet-form-img" src="./img/chargin-form-image.jpg" alt="form image">
-          <div class="chargingNet-form-group"> 
-            <h4 class="chargingNet-form-title">Где открыть следующую станцию подзарядки?</h4>
-            <h5 class="chargingNet-form-subtitle">Есть идеи, напишите нам.</h5>
+        <form class="questionForm-form" id="form-question"> <img class="questionForm-form-img" src="./img/question-form.jpg" alt="form image">
+          <div class="questionForm-form-group"> 
+            <h4 class="questionForm-form-title">Задать вопрос</h4>
+            <h5 class="questionForm-form-subtitle">Если Вы не нашли ответ на вопрос, заполните форму</h5>
             <div class="input-croup">
-              <input class="chargingNet-form-input invalid" id="name" type="text" name="name" placeholder="Имя" data-name="Имя">
+              <input class="questionForm-form-input invalid" id="name-question" type="text" name="name" placeholder="Имя" data-name="Имя">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -66,7 +62,7 @@
               </svg>
             </div>
             <div class="input-croup">
-              <input class="chargingNet-form-input invalid" id="telephone" type="tel" name="telephone" placeholder="Телефон">
+              <input class="questionForm-form-input invalid" id="telephone-question" type="tel" name="telephone" placeholder="Телефон">
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -75,7 +71,7 @@
               </svg>
             </div>
             <div class="input-croup">
-              <textarea class="chargingNet-form-textarea invalid" id="message" name="message" data-name="Место для новой зарядной станции" cols="30" rows="10" placeholder="Место для новой зарядной станции"></textarea>
+              <textarea class="questionForm-form-textarea invalid" id="message-question" name="message" data-name="Место для новой зарядной станции" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               <svg class="icon icon-success hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
               </svg>
@@ -83,8 +79,8 @@
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
               </svg>
             </div>
-            <label class="custom__checkbox invalid" for="checkbox">Да, мне было бы удобно заряжаться в предложенном мной месте
-              <input id="checkbox" type="checkbox" name="checkbox"><span class="checkmark"></span>
+            <label class="custom__checkbox invalid" for="checkbox-question">Я принимаю пользовательское соглашение
+              <input id="checkbox-question" type="checkbox" name="checkbox-question"><span class="checkmark"></span>
             </label>
             <input class="btn" type="submit" value="Отправить">
           </div>
