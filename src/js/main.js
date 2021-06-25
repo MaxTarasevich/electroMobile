@@ -16,13 +16,18 @@ class FormValidator {
       
       this.form.addEventListener('submit', e => {
         const invalid = document.querySelector(`.invalid`)
-        if(invalid != null){
-          e.preventDefault()
-        }
+        const error = document.querySelector(`.error`)
+        e.preventDefault()
+        if(invalid != null || error != null){
+        
           self.fields.forEach(field => {
-          const input = document.querySelector(`#${field}`)
-          self.validateFields(input)
-        })
+            const input = document.querySelector(`#${field}`)
+            self.validateFields(input)
+          })
+        }else{
+          self.successForm(self.form)
+        }
+          
       })
     }
     
@@ -119,6 +124,26 @@ class FormValidator {
     }
     
     }
+
+    successForm(formId){
+      let successBlock = document.createElement(`div`)
+      let imgSuccess = document.createElement(`img`)
+      let textSuccess = document.createElement(`p`)
+      
+      textSuccess.innerHTML = `<div>Отправлено!</div>
+      С вами свяжутся в ближайшее время`
+  
+      imgSuccess.setAttribute(`src`,'./img/success-icon-form.svg')
+      successBlock.classList.add(`success-form`)
+  
+      successBlock.append(imgSuccess)
+      successBlock.append(textSuccess)
+      let form = formId
+  
+      form.children[1].style.position = `relative`
+      form.children[1].append(successBlock)
+  
+    }
   }
   
 
@@ -158,6 +183,8 @@ class FormValidator {
     const validator = new FormValidator(questionForm, fields)
     validator.initialize()
   }
+
+
  /************Accordion in question block *****************/
  const questionBloks = document.querySelectorAll(`.questions-block`)
  function removeOpenClass (){
