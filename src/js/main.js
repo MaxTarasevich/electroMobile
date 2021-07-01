@@ -202,6 +202,59 @@ class FormValidator {
    })
  }
 
+
+/**************Slayder in about car section *************/
+const aboutCar = document.querySelector(`.aboutCar`)
+if(aboutCar != null){
+  const caruselItem = document.querySelectorAll(`.carusel-item`)
+  const mainImg = document.querySelector(`.main-img`)
+  const prev = document.querySelector(`.prev`)
+  const next = document.querySelector(`.next`)
+  const length = caruselItem.length
+  let itemCount = 3
+
+  next.addEventListener(`click`, () =>{
+    if(itemCount < length){
+      itemCount += 1
+      caruselItem.forEach((item,index)=>{
+        item.style.display = `none`
+        if(index <= itemCount && index >= itemCount-3){
+          item.style.display = `block`
+        }
+      })
+    }
+  })
+
+  prev.addEventListener(`click`, () =>{
+    if(itemCount > 3){
+      itemCount -= 1
+      caruselItem.forEach((item,index)=>{
+        item.style.display = `none`
+        if(index <= itemCount && index >= itemCount-3){
+          item.style.display = `block`
+        }
+      })
+    }
+  })
+
+
+  caruselItem.forEach((item,index)=>{
+    item.style.display = `none`
+    if(index <= itemCount && index >= itemCount-3){
+      item.style.display = `block`
+    }
+item.addEventListener(`click`,()=>{
+  mainImg.classList.toggle(`animate`)
+  setTimeout(()=>{
+    mainImg.setAttribute(`src`, item.getAttribute(`src`))
+    mainImg.classList.toggle(`animate`)
+  },400)
+ 
+})
+  })
+
+}
+
 /**************Custom Select**************************/
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */

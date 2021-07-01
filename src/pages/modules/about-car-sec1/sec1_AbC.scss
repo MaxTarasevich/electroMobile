@@ -32,6 +32,11 @@
                     object-position: center;
                     filter: drop-shadow(0px 5px 48px rgba(49, 47, 47, 0.1));
                     border-radius: 10px;
+                    opacity: 1;
+                    transition:opacity 0.4s ease-in;
+                }
+                .animate{
+                    opacity: 0.1;
                 }
             }
             &-description{
@@ -94,7 +99,7 @@
                 width: 65%;
                 position: relative;
                 display: flex;
-                justify-content: space-between;
+               justify-content: space-between;
                 @include media-custom(1200px){
                     width: 55%;
                 }
@@ -109,8 +114,8 @@
                     width: 95%;
                     margin: 0 auto;
                 }
-                img{
-                    width: 23%;
+                .carusel-item{
+                    min-width: 23%;
                     object-fit: cover;
                     object-position: center;
                     filter: drop-shadow(0px 5px 48px rgba(49, 47, 47, 0.1));
